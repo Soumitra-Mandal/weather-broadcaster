@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
-
+import React from 'react';
+import Display from './display.js'
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import {Container} from '@material-ui/core';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <AppBar position="static" style={{ background: '#333333' }}>
+  <Toolbar variant="dense">
+    <IconButton edge="start" className="menu-icon" color='inherit' aria-label="menu">
+      <MenuIcon />
+    </IconButton>
+    <Typography variant="h6" color="inherit">
+      Menu
+    </Typography>
+  </Toolbar>
+</AppBar>
+   <h1>WEATHER BROADCASTER</h1>
+<Container maxWidth = 'sm'>
+<Display/>
+</Container>
     </div>
   );
 }

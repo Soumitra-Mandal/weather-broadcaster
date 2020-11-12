@@ -1,0 +1,23 @@
+p{
+    color:#333333;
+    text-align: center;
+    margin:30px;
+}
+.display{
+    background-color: white;
+    height:auto;
+    padding:20px;
+    border-radius: 40px;;
+}
+
+.inputb{
+    position: relative;
+    left:8vw;
+}
+
+#btn{
+    margin:10px;
+    position: relative;
+    left:8vw;
+
+}
