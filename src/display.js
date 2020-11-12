@@ -30,7 +30,7 @@ export default class Display extends React.Component {
     
 handleSubmit=(e)=>{
     e.target.value='';
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=`+ this.state.city + `&units=metric&APPID=70207a5efd2148a93db198be86385483`)
+        fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=`+ this.state.city + `&units=metric&APPID=70207a5efd2148a93db198be86385483`)
           .then(response => response.json())
           .then(data =>
             {this.setState({
